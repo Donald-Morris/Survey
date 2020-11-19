@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Overwatch Survey</title>
+</head>
+<body>
+    <div class="form-group jumbotron container">
+        <header>
+            <h1 id="title" class="display-4">Welcome to the Overwatch Survey</h1>
+        <p id="description" class="lead">The world needs heroes!</p>
+        </header>
+        
+   
+
+    <form id="survey-form">
+        <div class="form-group container">
+            <label id="name-label" for="name-label">Name</label>
+            <input class="form-control" type="text" name="name" id="name" placeholder="Enter name" required>
+        </div>
+        <div class="form-group container">
+            <label id="email-label" for="email-label">Email</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group container">
+            <label id="number-label" for="number-label">Age <span>(optional)</span></label>
+            <input class="form-control" type="number" name="age" id="number" placeholder="Enter age" min="6" max="99">
+        </div>
+        
+        <div class="form-group container">
+            <p>What's your competitive rank?</p>
+           <select name="role" id="dropdown" class="form-control">
+               <option disabled selected value>Select rank</option>
+               <option style="background-color: springGreen" value="Unranked">Unranked</option>
+               <option style="background-color: #cd7f32" value="Bronze">Bronze (0 - 1,500 SR)</option>
+               <option style="background-color: silver"value="Silver">Silver (1,500 - 1,999 SR)</option>
+               <option style="background-color: #ffd700"value="Gold">Gold (2,000 - 2,499 SR)</option>
+               <option style="background-color: #e5e4e2"value="Platinum">Platinum (2,500 - 2,999 SR)</option>
+               <option style="background-color: #b9f2ff"value="Diamond">Diamond (3,000 - 3,499 SR)</option>
+               <option style="background-color: rgb(251, 222, 56)"value="Masters">Masters (3,500 - 3,999 SR)</option>
+               <option style="background-color: rgb(255, 247, 134)"value="BGrandmaster">Grandmaster (4,000 - 5,000 SR)</option>
+
+           </select>
+        </div>
+        <div class="form-group container">
+            <p>What is your favorite role to play?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio"  value="Tank" checked>
+                <label class="form-check-label" for="radio">
+                 Tank
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio"  value="DPS">
+                <label class="form-check-label" for="radio">
+                 DPS
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio"  value="Support">
+                <label class="form-check-label" for="radio">
+                 Support
+                </label>
+            </div>
+            
+        </div>
+        <div class="form-group container">
+            <p>What's your favorite map type?</p>
+           <select name="city" id="dropdown2" class="form-control">
+               <option disabled selected value>Select map</option>
+               <option value="Control">Control</option>
+               <option value="Assault">Assault</option>
+               <option value="Escort">Escort</option>
+               <option value="Capture the flag">Capture the flag</option>
+               <option value="Hybrid">Hybrid</option>
+               <option value="Elimination">Elimination</option>
+               <option value="Deathmatch">Deathmatch</option>
+               <option value="Team Deathmatch">Team Deathmatch</option>
+           </select>
+        </div>
+        <div class="form-group container">
+            <p>Who is your favorite hero? <span>(Check all that apply)</span></p>
+            <div class="row hero">
+                <div class="form-check">
+                    <div class="col">
+                        <label >
+                             <input type="checkbox" name="favorite" value="Ana" > Ana
+                        </label>
+                    </div>
+                </div>
+                <div class="form-check">
+                    
+                        <label >
+                            <input type="checkbox" name="favorite" value="Ashe" > Ashe
+                        </label>
+                     
+                </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Baptiste" > Baptiste
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Bastion" > Bastion
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Brigitte" > Brigitte
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="D.Va" > D.Va
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Doomfist" > Doomfist
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Echo" > Echo
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Genji" > Genji
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Hanzo" > Hanzo
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Junkrat" > Junkrat
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Lucio" > Lucio
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="McCree" > McCree
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Mei" > Mei
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Mercy" > Mercy
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Moira" > Moira
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Orisa" > Orisa
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Pharah" > Pharah
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Reaper" > Reaper
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Reinhardt" > Reinhardt
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Roadhog" > Roadhog
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Sigma" > Sigma
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Soldier:76" > Soldier:76
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Sombra" > Sombra
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Symmetra" > Symmetra
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Torbjorn" > Torbjorn
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Tracer" > Tracer
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Widowmaker" > Widowmaker
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Winston" > Winston
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Wrecking Ball" > Wrecking Ball
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Zarya" > Zarya
+                </label>
+            </div>
+            <div class="form-check">
+                <label >
+                    <input type="checkbox" name="favorite" value="Zenyatta" > Zenyatta
+                </label>
+            </div>
+        </div>
+        </div>
+        <div class="form-group container comment">
+            <p>Comments or questions?</p>
+            <textarea class="form-control" name="textarea" id="" cols="30" rows="10" placeholder="Enter comment"></textarea>
+        </div>
+        <div class="form-group container">
+            <button type="submit" id="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </div>
+    </div>
+        
+    </form>
+</body>
+</html>
